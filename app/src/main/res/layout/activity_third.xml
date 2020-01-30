@@ -48,10 +48,10 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/acme"
         android:text="HOURS HERE"
+        android:textColor="#173F5F"
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/avatar"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        android:textColor="#173F5F"/>
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
 
     <TextView
         android:id="@+id/otHoursDisplay"
@@ -60,11 +60,11 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
         android:text="OT HOURS HERE"
+        android:textColor="#173F5F"
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintStart_toStartOf="@+id/hoursDisplay"
-        app:layout_constraintTop_toBottomOf="@+id/hoursDisplay"
-        android:textColor="#173F5F"/>
+        app:layout_constraintTop_toBottomOf="@+id/rateDisplay" />
 
     <TextView
         android:id="@+id/rateDisplay"
@@ -73,10 +73,10 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
         android:text="RATE HERE"
+        android:textColor="#173F5F"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/otHoursDisplay"
-        app:layout_constraintTop_toBottomOf="@+id/otHoursDisplay"
-        android:textColor="#173F5F"/>
+        app:layout_constraintTop_toBottomOf="@+id/hoursDisplay" />
 
     <TextView
         android:id="@+id/otRateDisplay"
@@ -85,10 +85,10 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
         android:text="OVERTIME RATE HERE"
+        android:textColor="#173F5F"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/rateDisplay"
-        app:layout_constraintTop_toBottomOf="@+id/rateDisplay"
-        android:textColor="#173F5F"/>
+        app:layout_constraintTop_toBottomOf="@+id/otHoursDisplay" />
 
     <TextView
         android:id="@+id/wageDisplay"
@@ -112,10 +112,10 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/acme"
         android:text="HOURS RENDERED:"
+        android:textColor="#20639B"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        android:textColor="#20639B"/>
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
 
     <TextView
         android:id="@+id/otHoursLabel"
@@ -124,11 +124,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
-        android:text="(OVERTIME HOURS):"
+        android:text="OVERTIME HOURS:"
+        android:textColor="#20639B"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hoursLabel"
-        android:textColor="#20639B"/>
+        app:layout_constraintTop_toBottomOf="@+id/rateLabel" />
 
     <TextView
         android:id="@+id/rateLabel"
@@ -137,11 +137,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
-        android:text="RATE:"
+        android:text="STARTOVER RATE:"
+        android:textColor="#20639B"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otHoursLabel"
-        android:textColor="#20639B"/>
+        app:layout_constraintTop_toBottomOf="@+id/hoursLabel" />
 
     <TextView
         android:id="@+id/otRateLabel"
@@ -150,11 +150,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
-        android:text="(OVERTIME RATE):"
+        android:text="OVERTIME RATE:"
+        android:textColor="#20639B"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rateLabel"
-        android:textColor="#20639B"/>
+        app:layout_constraintTop_toBottomOf="@+id/otHoursLabel" />
 
     <TextView
         android:id="@+id/wageLabel"
@@ -190,10 +190,10 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/acme"
         android:text="DEPARTMENT HERE"
-        android:textSize="20dp"
+        android:textColor="#173F5F"
+        android:textSize="16dp"
         app:layout_constraintStart_toEndOf="@id/avatar"
-        app:layout_constraintTop_toBottomOf="@+id/ageSexDisplay"
-        android:textColor="#173F5F"/>
+        app:layout_constraintTop_toBottomOf="@+id/ageSexDisplay" />
 
     <TextView
         android:id="@+id/ageSexDisplay"

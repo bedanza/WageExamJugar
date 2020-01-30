@@ -38,6 +38,7 @@ public class ThirdActivity extends AppCompatActivity {
         int otHours = 0;
         int rate = 0;
         int otRate = 0;
+        String deptShow = "";
 
 
         TextView callIdText = findViewById(R.id.idDisplay);
@@ -63,24 +64,28 @@ public class ThirdActivity extends AppCompatActivity {
         callIdText.setText(String.valueOf(idNumFinal));
         callName.setText(lnameFinal + ", " + fnameFinal);
         callAgeSex.setText(ageFinal + ", " + sexFinal);
-        callDept.setText(deptFinal);
+
         callHours.setText(hoursNotFinal);
 
         switch(deptFinal) {
             case "HR":
                 rate = 100;
                 otRate = 130;
+                deptShow = "Human Resources Department";
                 break;
             case "Academic":
                 rate = 90;
                 otRate = 140;
+                deptShow = "Academic Department";
                 break;
             case "Admin":
                 rate = 110;
                 otRate = 150;
+                deptShow = "Administrative Department";
                 break;
         }
 
+        callDept.setText(deptFinal);
         callRate.setText("\u20B1"+rate+".00");
 
         if(hoursFinal <= 8) {
