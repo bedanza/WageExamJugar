@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_avatar" />
+
+    <ImageView
+        android:id="@+id/myPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar"
+        app:srcCompat="@drawable/hernanpic" />
+
+    <TextView
+        android:id="@+id/idDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="ID NUMBER HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/hoursDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="HOURS HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/otHoursDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="OT HOURS HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@+id/hoursDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/hoursDisplay"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/rateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="RATE HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/otHoursDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/otHoursDisplay"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/otRateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="OVERTIME RATE HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/rateDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/rateDisplay"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/wageDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/acme"
+        android:text="WAGE HERE"
+        android:textColor="#173F5F"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wageLabel"
+        app:layout_constraintStart_toEndOf="@+id/wageLabel"
+        app:layout_constraintTop_toTopOf="@+id/wageLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hoursLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="HOURS RENDERED:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+        android:textColor="#20639B"/>
+
+    <TextView
+        android:id="@+id/otHoursLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="(OVERTIME HOURS):"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoursLabel"
+        android:textColor="#20639B"/>
+
+    <TextView
+        android:id="@+id/rateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="RATE:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otHoursLabel"
+        android:textColor="#20639B"/>
+
+    <TextView
+        android:id="@+id/otRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="(OVERTIME RATE):"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateLabel"
+        android:textColor="#20639B"/>
+
+    <TextView
+        android:id="@+id/wageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/acme"
+        android:text="WAGE:"
+        android:textSize="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otRateLabel"
+        />
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="NAME HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/idDisplay"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/deptDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="DEPARTMENT HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/ageSexDisplay"
+        android:textColor="#173F5F"/>
+
+    <TextView
+        android:id="@+id/ageSexDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/acme"
+        android:text="AGE AND SEX HERE"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/nameDisplay"
+        android:textColor="#173F5F"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="280dp"
+        android:layout_height="24dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wageDisplay"
+        android:background="#173F5F"
+        android:textColor="#FFFFFF"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

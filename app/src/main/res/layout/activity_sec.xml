@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/fNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/acme"
+        android:text="First Name"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="Last Name"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <TextView
+        android:id="@+id/sexLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="Sex"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lNameLabel" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="Age"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexLabel" />
+
+    <TextView
+        android:id="@+id/idLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="ID Number"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLabel" />
+
+    <TextView
+        android:id="@+id/deptLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="Department"
+        android:textColor="#173F5F"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLabel" />
+
+    <TextView
+        android:id="@+id/hoursLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="Hours Rendered"
+        android:textColor="#173F5F"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deptLabel" />
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/fNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/lNameLabel" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/ageLabel"
+        app:layout_constraintEnd_toEndOf="@+id/sexSpinner"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+        app:layout_constraintTop_toTopOf="@+id/ageLabel" />
+
+    <EditText
+        android:id="@+id/idNum"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/idLabel"
+        app:layout_constraintEnd_toEndOf="@+id/sexSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+        app:layout_constraintTop_toTopOf="@+id/idLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/hoursRendered"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/hoursLabel"
+        app:layout_constraintEnd_toEndOf="@+id/sexSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+        app:layout_constraintTop_toTopOf="@+id/hoursLabel" />
+
+    <Spinner
+        android:id="@+id/sexSpinner"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/sexList"
+        app:layout_constraintBottom_toBottomOf="@+id/sexLabel"
+        app:layout_constraintEnd_toEndOf="@+id/lName"
+        app:layout_constraintStart_toStartOf="@+id/lName"
+        app:layout_constraintTop_toTopOf="@+id/sexLabel" />
+
+    <Spinner
+        android:id="@+id/deptSpinner"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:entries="@array/departmentList"
+        app:layout_constraintBottom_toBottomOf="@+id/deptLabel"
+        app:layout_constraintEnd_toEndOf="@+id/idNum"
+        app:layout_constraintStart_toStartOf="@+id/idNum"
+        app:layout_constraintTop_toTopOf="@+id/deptLabel" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="280dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="96dp"
+        android:background="#173F5F"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoursRendered" />
+</androidx.constraintlayout.widget.ConstraintLayout>

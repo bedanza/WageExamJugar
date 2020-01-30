@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WageExamJugar</string>
+    <string-array name="sexList">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="departmentList">
+        <item>HR</item>
+        <item>Academic</item>
+        <item>Admin</item>
+    </string-array>
+</resources>
