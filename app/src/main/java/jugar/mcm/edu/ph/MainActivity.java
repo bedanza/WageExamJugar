@@ -26,8 +26,23 @@ public class MainActivity extends AppCompatActivity {
         final EditText callPassword = findViewById(R.id.passWord);
         final Button callLogin = findViewById(R.id.login);
 
+        callUsername.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        callUsername.setText("");
+                    }
+                }
+        );
 
-
+        callPassword.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        callPassword.setText("");
+                    }
+                }
+        );
         callLogin.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
