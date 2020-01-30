@@ -11,7 +11,7 @@
         android:id="@+id/copyRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="© 2020 Blackboard Inc. All Rights Reserved."
+        android:text="© 2020 Wage Calculator Inc. All Rights Reserved."
         android:textColor="#FFFFFF"
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
