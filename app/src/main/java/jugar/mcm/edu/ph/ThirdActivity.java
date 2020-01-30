@@ -71,21 +71,21 @@ public class ThirdActivity extends AppCompatActivity {
             case "HR":
                 rate = 100;
                 otRate = 130;
-                deptShow = "Human Resources Department";
+                deptShow = "Human Resources \nDepartment";
                 break;
             case "Academic":
                 rate = 90;
                 otRate = 140;
-                deptShow = "Academic Department";
+                deptShow = "Academic \nDepartment";
                 break;
             case "Admin":
                 rate = 110;
                 otRate = 150;
-                deptShow = "Administrative Department";
+                deptShow = "Administrative \nDepartment";
                 break;
         }
 
-        callDept.setText(deptFinal);
+        callDept.setText(deptShow);
         callRate.setText("\u20B1"+rate+".00");
 
         if(hoursFinal <= 8) {
